@@ -33,7 +33,6 @@ These are measured held-out test results, transcribed from the supplied executed
 1. Upload `notebooks/galaxy_photoz_complete_tutorial.ipynb` to Colab.
 2. Run cells sequentially. Package installation and an SDSS download require internet access. Runtime and service behavior can vary.
 3. To reproduce the exact sample, first restore your saved runtime archive into `/content/galaxy-photoz-ml`; otherwise the notebook queries SDSS again. A new download is not guaranteed to reproduce historical metrics exactly.
-4. The last export cell is new and has not been executed in this edited copy. Run it to download the complete runtime archive, then download the executed notebook separately.
 
 The package includes the executed tutorial, documentation, dependency snapshot, and rounded summary tables. **The raw/clean catalog, partition CSVs, individual test predictions, and fitted joblib model are not embedded in this package.** They were saved in the user's Colab runtime; retrieve them using the final export cell while the session is available. Displayed notebook tables are not the complete catalog.
 
@@ -58,7 +57,3 @@ Broad magnitude/error bounds retain unusual and uncertain photometry. The model 
 Data source: [SDSS DR17](https://www.sdss4.org/dr17/). Follow [SDSS acknowledgments](https://www.sdss4.org/collaboration/acknowledgements/) and applicable data-use instructions when distributing data. The notebook links release documentation, selection definitions, and method documentation.
 
 Software: NumPy, pandas, matplotlib, Astropy, Astroquery, and scikit-learn. See [random forests](https://scikit-learn.org/stable/modules/ensemble.html#random-forests), [cross-validation](https://scikit-learn.org/stable/modules/cross_validation.html), and [permutation importance](https://scikit-learn.org/stable/modules/permutation_importance.html).
-
-## Suggested résumé wording
-
-Built a reproducible SDSS galaxy photometric-redshift regression project in Python, comparing baseline, linear, and random-forest models; achieved held-out test MAE of 0.0159 (66% below a median baseline) and analyzed feature importance and redshift-dependent bias.
