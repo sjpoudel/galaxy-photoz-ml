@@ -1,0 +1,4 @@
+model,MAE,RMSE,normalized_bias,NMAD,outlier_fraction_abs_delta_gt_0.15
+Median baseline,0.046965,0.059198,-0.004974,0.054866,0
+Linear regression,0.023117,0.032923,0.000819,0.023877,0.003
+Random forest,0.015886,0.02193,0.000391,0.015489,0
